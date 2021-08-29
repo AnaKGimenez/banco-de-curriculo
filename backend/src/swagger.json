@@ -1,0 +1,121 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Cadastro de Candidato",
+        "description": "API de persistência do cadastro do candidato",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+    "paths": {
+        "/register": {
+            "post": {
+                "sumary": "Cadastro de candidato",
+                "description": "Tag e Body de chamada: nome. gender, email e cep",
+                "tags": [
+                    "candidato"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "job": {
+                                        "type": "string"
+                                    },
+                                    "birthday": {
+                                        "type": "string"
+                                    },
+                                    "civil": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "zip": {
+                                        "type": "string"
+                                    },
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "neighbor": {
+                                        "type": "string"
+                                    },
+                                    "town": {
+                                        "type": "string"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "uf": {
+                                        "type": "string"
+                                    },
+                                    "phone1": {
+                                        "type": "string"
+                                    },
+                                    "phone2": {
+                                        "type": "string"
+                                    },
+                                    "cel": {
+                                        "type": "string"
+                                    },
+                                    "contact": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "personal_id": {
+                                        "type": "string"
+                                    },
+                                    "social_id": {
+                                        "type": "string"
+                                    },
+                                    "car": {
+                                        "type": "string"
+                                    },
+                                    "license": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "self": {
+                                    "value": {
+                                        "name": "Ana K Gimenez",
+                                        "job": "Desenvolvedor JS",
+                                        "birthday": "Jan, 28 1967",
+                                        "civil": "casada",
+                                        "gender": "feminino",
+                                        "zip": "01234567",
+                                        "street": "Nome da rua, 5 apto 3",
+                                        "neighbor": "Santana",
+                                        "town": "São Paulo",
+                                        "state": "",
+                                        "uf": "SP",
+                                        "phone1": "",
+                                        "phone2": "",
+                                        "cel": "9999-9999",
+                                        "contact": "",
+                                        "email": "anakgimenez@hotmail.com",
+                                        "personal_id": "",
+                                        "social_id": "222.222.222-22",
+                                        "car": "",
+                                        "license": ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

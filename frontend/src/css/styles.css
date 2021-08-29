@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #bea99d;
+  color: #515350;
+  margin:5px;
+}
+
+label {
+  display: block;
+  font-size: small;
+}
+
+abbr {
+  color:red;
+}
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content:left;
+  max-width: 500px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+container{
+  padding: 0 2px;
+  margin: 3px 4px;
+}
+
+.name, .name input {
+   width: 300px;
+}
+
+.job, .job input {
+   width: 180px;
+}
+
+.birthday ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+
+.birthday ul li{
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  margin: 0;
+  font-size: x-small;
+}
+small {
+  margin: 0;
+  font-size: x-small;
+}
+
+.street, .street input {
+   width: 400px;
+}
+
+.neighbor, .neighbor input {
+   width:100px;
+}
+
+.town, .town input {
+  width: 200px;
+}
+
+.state, .state input {
+  width: 120px;
+}
+
+.UF, .UF input {
+  width: 30px;
+}
+
+
+.cep, .cep input,
+.phone1, .phone1 input,
+.phone2, .phone2 input,
+.cel, .cel input {
+   width:100px;
+}
+.contact, .contact input {
+  width:150px;
+}
+
+.email, .email input{
+   width:250px;
+}
+
+.personal_id, .personal_id input,
+.social_id, .social_id input {
+  width: 130px;
+}
+
+.car, .license {
+  width: 100px;
+}
+
+.car ul, .license ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  font-size: small;
+}
+
+.car input, .license input {
+  width: 40px;
+}
+
+button {
+  justify-content: center;
+}
